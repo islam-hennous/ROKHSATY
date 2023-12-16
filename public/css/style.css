@@ -1,0 +1,155 @@
+/* start fonts */
+
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@300;500;700&display=swap");
+
+/* end fonts */
+
+/* ---------------------------------------------------------------------------- */
+
+/* start global val */
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+:root {
+    --backgroundColor: green;
+}
+
+body {
+    background-color: #eee;
+    font-family: "Cairo", sans-serif;
+}
+
+.bg-green {
+    background-color: var(--backgroundColor);
+}
+
+.text-green {
+    color: var(--backgroundColor);
+}
+
+.btn:hover {
+    color: var(--backgroundColor) !important;
+}
+
+@media (min-width: 767px) {
+    .content {
+        margin: auto !important;
+        width: 70%;
+        min-height: 120vh;
+        box-shadow: 0px 0px 20px 3px #7a7a7a;
+    }
+}
+
+li {
+    list-style: none;
+}
+
+.card {
+    width: 20%;
+}
+
+table {
+    width: 70%;
+}
+
+.form-control:focus {
+    border-color: green !important;
+    box-shadow: 0 0 0 0.25rem rgba(53, 179, 91, 0.829) !important;
+}
+
+.navbar-toggler {
+    margin-top: 10px !important;
+    margin-bottom: 10px !important;
+    color: transparent !important;
+}
+
+.accordion {
+    --bs-accordion-active-bg: var(--backgroundColor) !important;
+    --bs-body-bg: #eee;
+    --bs-accordion-active-color: white;
+}
+
+/* end global val */
+
+/*-------------------------------------------------------------------------------------------*/
+
+/* start navbar */
+
+header {
+    display: none !important;
+}
+
+@media (min-width: 992px) {
+    header {
+        background-image: url(../assets/header.png);
+        background-repeat: no-repeat;
+        background-size: 100% 100px;
+        height: 100px;
+        display: block !important;
+    }
+}
+
+.nav ul {
+    height: 100% !important;
+    width: 100% !important;
+}
+
+@media (min-width: 767px) {
+    nav ul {
+        width: 70% !important;
+        height: 100% !important;
+    }
+}
+
+nav ul a {
+    text-decoration: none;
+    transition: 0.2s;
+    height: 100%;
+}
+
+@media (min-width: 767px) {
+    nav ul a {
+        text-decoration: none;
+        transition: 0.2s;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+nav ul a:hover {
+    background-color: red;
+}
+
+/* end navbar */
+
+/*-------------------------------------------------------------------------------------------*/
+
+/* home page */
+
+#home button:hover {
+    color: var(--backgroundColor) !important;
+}
+
+#home .cards {
+    height: 250px !important;
+}
+
+/* end home page */
+
+/*-------------------------------------------------------------------------------------------*/
+
+/* contact page */
+
+#contact button:hover {
+    color: var(--backgroundColor) !important;
+}
+
+/* end contact page */
+
+/*-------------------------------------------------------------------------------------------*/
